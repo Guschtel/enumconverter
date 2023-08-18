@@ -1,6 +1,6 @@
-package dev.bfse.hibernate.showcase.enumconverter.jpa.repository;
+package dev.bfs.hibernate.showcase.enumconverter.jpa.repository;
 
-import dev.bfse.hibernate.showcase.enumconverter.jpa.entity.TestEntity;
+import dev.bfs.hibernate.showcase.enumconverter.jpa.entity.TestEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,6 +1,6 @@
-package dev.bfse.hibernate.showcase.enumconverter.jpa.entity;
+package dev.bfs.hibernate.showcase.enumconverter.jpa.entity;
 
-import dev.bfse.hibernate.showcase.enumconverter.domain.SinglecharEnum;
+import dev.bfs.hibernate.showcase.enumconverter.domain.SinglecharEnum;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
@@ -45,12 +45,10 @@ public class TestEntity {
         public boolean equals(Object o) {
             if (this == o) return true;
 
-            if (!(o instanceof TestEntity))
+            if (!(o instanceof TestEntity other))
                 return false;
 
-            TestEntity other = (TestEntity) o;
-
-            return this.id != null &&
+        return this.id != null &&
                     this.id.equals(other.getId());
         }
 

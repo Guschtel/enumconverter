@@ -1,4 +1,4 @@
-package dev.bfse.hibernate.showcase.enumconverter.domain;
+package dev.bfs.hibernate.showcase.enumconverter.domain;
 
 public enum SinglecharEnum {
 
@@ -11,7 +11,7 @@ public enum SinglecharEnum {
 
     private final String item;
 
-    private SinglecharEnum(String item) {
+    SinglecharEnum(String item) {
         this.item = item;
     }
 

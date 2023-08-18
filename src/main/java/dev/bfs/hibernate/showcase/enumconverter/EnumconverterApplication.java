@@ -1,4 +1,4 @@
-package dev.bfse.hibernate.showcase.enumconverter;
+package dev.bfs.hibernate.showcase.enumconverter;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,8 +1,8 @@
-package dev.bfse.hibernate.showcase.enumconverter;
+package dev.bfs.hibernate.showcase.enumconverter;
 
-import dev.bfse.hibernate.showcase.enumconverter.domain.SinglecharEnum;
-import dev.bfse.hibernate.showcase.enumconverter.jpa.entity.TestEntity;
-import dev.bfse.hibernate.showcase.enumconverter.jpa.entity.TestWithConverterEntity;
+import dev.bfs.hibernate.showcase.enumconverter.domain.SinglecharEnum;
+import dev.bfs.hibernate.showcase.enumconverter.jpa.entity.TestEntity;
+import dev.bfs.hibernate.showcase.enumconverter.jpa.entity.TestWithConverterEntity;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
@@ -16,7 +16,7 @@ import static org.junit.jupiter.api.Assertions.fail;
 /**
  * This test demonstrates, that an enum field with a column definition with length of 1 cannot be persisted with Hibernate 6
  * when using the automatic Enum conversion provided by @{@link jakarta.persistence.Enumerated} with {@link jakarta.persistence.EnumType#STRING}.<br />
- * See @{@link TestEntity#singleChar} and {@link SinglecharEnum}
+ * See @{@link TestEntity#getSingleChar()} and {@link SinglecharEnum}
  */
 class EnumJunitTestCase {
 
@@ -33,7 +33,7 @@ class EnumJunitTestCase {
     }
 
     @Test
-    void enumTestFailsWithEnumConverter() throws Exception {
+    void enumTestFailsWithEnumConverter() {
         EntityManager entityManager = entityManagerFactory.createEntityManager();
 
         try (entityManager) {
@@ -49,7 +49,7 @@ class EnumJunitTestCase {
     }
 
     @Test
-    void enumTestOkWithCustomConverter() throws Exception {
+    void enumTestOkWithCustomConverter() {
         EntityManager entityManager = entityManagerFactory.createEntityManager();
 
         try (entityManager) {

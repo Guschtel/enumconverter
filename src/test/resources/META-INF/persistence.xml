@@ -4,8 +4,8 @@
              version="2.0" xmlns="http://java.sun.com/xml/ns/persistence">
 
     <persistence-unit name="templatePU" transaction-type="RESOURCE_LOCAL">
-        <class>dev.bfse.hibernate.showcase.enumconverter.jpa.entity.TestEntity</class>
-        <class>dev.bfse.hibernate.showcase.enumconverter.jpa.entity.TestWithConverterEntity</class>
+        <class>dev.bfs.hibernate.showcase.enumconverter.jpa.entity.TestEntity</class>
+        <class>dev.bfs.hibernate.showcase.enumconverter.jpa.entity.TestWithConverterEntity</class>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="org.h2.Driver" />
             <property name="javax.persistence.jdbc.url"    value="jdbc:h2:mem:test" />

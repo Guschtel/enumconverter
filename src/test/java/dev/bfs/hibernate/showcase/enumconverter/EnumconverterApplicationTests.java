@@ -1,4 +1,4 @@
-package dev.bfse.hibernate.showcase.enumconverter;
+package dev.bfs.hibernate.showcase.enumconverter;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

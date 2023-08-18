@@ -1,6 +1,6 @@
-package dev.bfse.hibernate.showcase.enumconverter.jpa.converter;
+package dev.bfs.hibernate.showcase.enumconverter.jpa.converter;
 
-import dev.bfse.hibernate.showcase.enumconverter.domain.SinglecharEnum;
+import dev.bfs.hibernate.showcase.enumconverter.domain.SinglecharEnum;
 import jakarta.persistence.AttributeConverter;
 import jakarta.persistence.Converter;
 import org.springframework.lang.NonNull;
