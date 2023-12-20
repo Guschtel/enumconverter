@@ -4,6 +4,8 @@ This repository demonstrates, that an enum field with a column definition with l
 when using the automatic Enum conversion provided by jakarta.persistence.Enumerated with jakarta.persistence.EnumType#STRING.
 See TestEntity#singleChar an SinglecharEnum
 
+This is a reproducer for https://hibernate.atlassian.net/jira/software/c/projects/HHH/issues/HHH-17106?filter=reportedbyme
+
 The failing example uses
 - EnumJunitTestCase.enumTestFailsWithEnumConverter
 - TestEntity
